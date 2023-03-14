@@ -6,9 +6,9 @@ import Movies from '../src/components/movies'
 
 const routes = (
   <Route exact path="/" component={App}>
-    <Route exact path="/about" component={Template1} />
+    <Route exact path="/about" component={Movies} />
     <Route exact path="/movie" component={Movies} />
-    <Route exact path="/" component={Template3} />
+    <Route exact path="/teste" component={Movies} />
   </Route>
 )
 

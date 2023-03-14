@@ -7,8 +7,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { Router } from 'react-router-dom';
+import { browserHistory } from '@remix-run/router';
+import routes from './routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+ReactDOM.render(
+  <Router history={browserHistory} routes={routes} />,
+  document.getElementById('root')
+);
 root.render(
   <React.StrictMode>
     <Home/>
