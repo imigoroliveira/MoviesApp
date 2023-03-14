@@ -6,7 +6,6 @@ export default function Filme() {
   return (
     <div>
      <Header></Header>
-     <Movie></Movie>
      <Footer></Footer>
     </div>
   )
